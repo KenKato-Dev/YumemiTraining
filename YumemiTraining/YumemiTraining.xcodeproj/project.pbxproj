@@ -14,7 +14,31 @@
 		EC0480BA27E744A000DF56DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0480B927E744A000DF56DE /* Assets.xcassets */; };
 		EC0480BD27E744A000DF56DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0480BB27E744A000DF56DE /* LaunchScreen.storyboard */; };
 		EC0480C627E7455600DF56DE /* YumemiWeather in Frameworks */ = {isa = PBXBuildFile; productRef = EC0480C527E7455600DF56DE /* YumemiWeather */; };
+		EC8C50B327EF58730041D396 /* WeatherInformation.json in Resources */ = {isa = PBXBuildFile; fileRef = EC8C50B227EF58730041D396 /* WeatherInformation.json */; };
+		ECE2F0A4280A7A5500975A38 /* AddedNewUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE2F0A3280A7A5500975A38 /* AddedNewUIViewController.swift */; };
+		ECE2F0C4281657A500975A38 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE2F0C3281657A500975A38 /* Weather.swift */; };
+		ECE2F0C6281657DF00975A38 /* AreaAndDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE2F0C5281657DF00975A38 /* AreaAndDate.swift */; };
+		ECE2F0C92816580B00975A38 /* ReturnedInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE2F0C82816580B00975A38 /* ReturnedInfo.swift */; };
+		ECE2F0CB2817835000975A38 /* WeatherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE2F0CA2817835000975A38 /* WeatherError.swift */; };
+		ECE2F0D5281CF3C500975A38 /* YumemiTrainingUinitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE2F0D4281CF3C500975A38 /* YumemiTrainingUinitTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECE2F0B7280C306700975A38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC0480A527E7449D00DF56DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC0480AC27E7449D00DF56DE;
+			remoteInfo = YumemiTraining;
+		};
+		ECE2F0D6281CF3C500975A38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC0480A527E7449D00DF56DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC0480AC27E7449D00DF56DE;
+			remoteInfo = YumemiTraining;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EC0480AD27E7449D00DF56DE /* YumemiTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YumemiTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +49,15 @@
 		EC0480B927E744A000DF56DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC0480BC27E744A000DF56DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC0480BE27E744A000DF56DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC8C50B227EF58730041D396 /* WeatherInformation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WeatherInformation.json; sourceTree = "<group>"; };
+		ECE2F0A3280A7A5500975A38 /* AddedNewUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedNewUIViewController.swift; sourceTree = "<group>"; };
+		ECE2F0B1280C306700975A38 /* YumemiTrainingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YumemiTrainingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECE2F0C3281657A500975A38 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		ECE2F0C5281657DF00975A38 /* AreaAndDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaAndDate.swift; sourceTree = "<group>"; };
+		ECE2F0C82816580B00975A38 /* ReturnedInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnedInfo.swift; sourceTree = "<group>"; };
+		ECE2F0CA2817835000975A38 /* WeatherError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherError.swift; sourceTree = "<group>"; };
+		ECE2F0D2281CF3C500975A38 /* YumemiTrainingUinitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YumemiTrainingUinitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECE2F0D4281CF3C500975A38 /* YumemiTrainingUinitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YumemiTrainingUinitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +69,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECE2F0AE280C306700975A38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECE2F0CF281CF3C500975A38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -43,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				EC0480AF27E7449D00DF56DE /* YumemiTraining */,
+				ECE2F0D3281CF3C500975A38 /* YumemiTrainingUinitTests */,
 				EC0480AE27E7449D00DF56DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				EC0480AD27E7449D00DF56DE /* YumemiTraining.app */,
+				ECE2F0B1280C306700975A38 /* YumemiTrainingUITests.xctest */,
+				ECE2F0D2281CF3C500975A38 /* YumemiTrainingUinitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,12 +111,34 @@
 				EC0480B027E7449D00DF56DE /* AppDelegate.swift */,
 				EC0480B227E7449D00DF56DE /* SceneDelegate.swift */,
 				EC0480B427E7449D00DF56DE /* ViewController.swift */,
+				ECE2F0C3281657A500975A38 /* Weather.swift */,
+				ECE2F0CA2817835000975A38 /* WeatherError.swift */,
+				ECE2F0C5281657DF00975A38 /* AreaAndDate.swift */,
+				ECE2F0C82816580B00975A38 /* ReturnedInfo.swift */,
+				ECE2F0C7281657FA00975A38 /* Model */,
+				ECE2F0A3280A7A5500975A38 /* AddedNewUIViewController.swift */,
 				EC0480B627E7449D00DF56DE /* Main.storyboard */,
 				EC0480B927E744A000DF56DE /* Assets.xcassets */,
 				EC0480BB27E744A000DF56DE /* LaunchScreen.storyboard */,
 				EC0480BE27E744A000DF56DE /* Info.plist */,
+				EC8C50B227EF58730041D396 /* WeatherInformation.json */,
 			);
 			path = YumemiTraining;
+			sourceTree = "<group>";
+		};
+		ECE2F0C7281657FA00975A38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECE2F0D3281CF3C500975A38 /* YumemiTrainingUinitTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECE2F0D4281CF3C500975A38 /* YumemiTrainingUinitTests.swift */,
+			);
+			path = YumemiTrainingUinitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,6 +151,7 @@
 				EC0480A927E7449D00DF56DE /* Sources */,
 				EC0480AA27E7449D00DF56DE /* Frameworks */,
 				EC0480AB27E7449D00DF56DE /* Resources */,
+				EC8C50B427EFE7070041D396 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -92,6 +165,42 @@
 			productReference = EC0480AD27E7449D00DF56DE /* YumemiTraining.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ECE2F0B0280C306700975A38 /* YumemiTrainingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECE2F0BB280C306700975A38 /* Build configuration list for PBXNativeTarget "YumemiTrainingUITests" */;
+			buildPhases = (
+				ECE2F0AD280C306700975A38 /* Sources */,
+				ECE2F0AE280C306700975A38 /* Frameworks */,
+				ECE2F0AF280C306700975A38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECE2F0B8280C306700975A38 /* PBXTargetDependency */,
+			);
+			name = YumemiTrainingUITests;
+			productName = YumemiTrainingUITests;
+			productReference = ECE2F0B1280C306700975A38 /* YumemiTrainingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		ECE2F0D1281CF3C500975A38 /* YumemiTrainingUinitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECE2F0DA281CF3C500975A38 /* Build configuration list for PBXNativeTarget "YumemiTrainingUinitTests" */;
+			buildPhases = (
+				ECE2F0CE281CF3C500975A38 /* Sources */,
+				ECE2F0CF281CF3C500975A38 /* Frameworks */,
+				ECE2F0D0281CF3C500975A38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECE2F0D7281CF3C500975A38 /* PBXTargetDependency */,
+			);
+			name = YumemiTrainingUinitTests;
+			productName = YumemiTrainingUinitTests;
+			productReference = ECE2F0D2281CF3C500975A38 /* YumemiTrainingUinitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -104,6 +213,14 @@
 				TargetAttributes = {
 					EC0480AC27E7449D00DF56DE = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					ECE2F0B0280C306700975A38 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EC0480AC27E7449D00DF56DE;
+					};
+					ECE2F0D1281CF3C500975A38 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EC0480AC27E7449D00DF56DE;
 					};
 				};
 			};
@@ -124,6 +241,8 @@
 			projectRoot = "";
 			targets = (
 				EC0480AC27E7449D00DF56DE /* YumemiTraining */,
+				ECE2F0B0280C306700975A38 /* YumemiTrainingUITests */,
+				ECE2F0D1281CF3C500975A38 /* YumemiTrainingUinitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -134,25 +253,94 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC0480BD27E744A000DF56DE /* LaunchScreen.storyboard in Resources */,
+				EC8C50B327EF58730041D396 /* WeatherInformation.json in Resources */,
 				EC0480BA27E744A000DF56DE /* Assets.xcassets in Resources */,
 				EC0480B827E7449D00DF56DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECE2F0AF280C306700975A38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECE2F0D0281CF3C500975A38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EC8C50B427EFE7070041D396 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC0480A927E7449D00DF56DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE2F0C6281657DF00975A38 /* AreaAndDate.swift in Sources */,
 				EC0480B527E7449D00DF56DE /* ViewController.swift in Sources */,
 				EC0480B127E7449D00DF56DE /* AppDelegate.swift in Sources */,
+				ECE2F0A4280A7A5500975A38 /* AddedNewUIViewController.swift in Sources */,
 				EC0480B327E7449D00DF56DE /* SceneDelegate.swift in Sources */,
+				ECE2F0C4281657A500975A38 /* Weather.swift in Sources */,
+				ECE2F0C92816580B00975A38 /* ReturnedInfo.swift in Sources */,
+				ECE2F0CB2817835000975A38 /* WeatherError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECE2F0AD280C306700975A38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECE2F0CE281CF3C500975A38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECE2F0D5281CF3C500975A38 /* YumemiTrainingUinitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECE2F0B8280C306700975A38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC0480AC27E7449D00DF56DE /* YumemiTraining */;
+			targetProxy = ECE2F0B7280C306700975A38 /* PBXContainerItemProxy */;
+		};
+		ECE2F0D7281CF3C500975A38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC0480AC27E7449D00DF56DE /* YumemiTraining */;
+			targetProxy = ECE2F0D6281CF3C500975A38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EC0480B627E7449D00DF56DE /* Main.storyboard */ = {
@@ -211,6 +399,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -272,6 +461,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -346,6 +536,76 @@
 			};
 			name = Release;
 		};
+		ECE2F0B9280C306700975A38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U3RYC9R4B5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KatoKen.YumemiTrainingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YumemiTraining;
+			};
+			name = Debug;
+		};
+		ECE2F0BA280C306700975A38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U3RYC9R4B5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KatoKen.YumemiTrainingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YumemiTraining;
+			};
+			name = Release;
+		};
+		ECE2F0D8281CF3C500975A38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U3RYC9R4B5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KatoKen.YumemiTrainingUinitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YumemiTraining.app/YumemiTraining";
+			};
+			name = Debug;
+		};
+		ECE2F0D9281CF3C500975A38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U3RYC9R4B5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KatoKen.YumemiTrainingUinitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YumemiTraining.app/YumemiTraining";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -363,6 +623,24 @@
 			buildConfigurations = (
 				EC0480C227E744A000DF56DE /* Debug */,
 				EC0480C327E744A000DF56DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECE2F0BB280C306700975A38 /* Build configuration list for PBXNativeTarget "YumemiTrainingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECE2F0B9280C306700975A38 /* Debug */,
+				ECE2F0BA280C306700975A38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECE2F0DA281CF3C500975A38 /* Build configuration list for PBXNativeTarget "YumemiTrainingUinitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECE2F0D8281CF3C500975A38 /* Debug */,
+				ECE2F0D9281CF3C500975A38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
