@@ -10,14 +10,14 @@ import YumemiWeather
 @testable import YumemiTraining
 
 class YumemiTrainingUinitTests: XCTestCase {
-//    var weatherModel:WeatherModelMock!
-//    var weatherViewController:ViewController!
+    var weatherModel:WeatherModelMock!
+    var weatherViewController:ViewController!
     //テスト実行前に呼ばれる
     override func setUpWithError() throws {
-//        weatherModel = WeatherModelMock()
-//        weatherViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "weather") as? ViewController
-//        weatherViewController.originalWeatherModel = weatherModel
-//        _ = weatherViewController.view
+        weatherModel = WeatherModelMock()
+        weatherViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "weather") as? ViewController
+        weatherViewController.weatherModel = weatherModel
+        _ = weatherViewController.view
 
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -40,22 +40,26 @@ class YumemiTrainingUinitTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    // 天気予報がsunnyだったら、画面に晴れ画像が表示されること
-//    func testDisplaySunnyByWeatherReport(){
-//        weatherModel.fetchWeatherimp1 = { _ in
-//         ReturnedInfo(max_temp: 0, date: "2022-03-29T02:50:25+09:00", min_temp: 0, weather: "sunny")
-//        }
-////        weatherViewController.loadWeather()
-//    }
-//}
-//class WeatherModelMock: WeatherModel {
-//    func fetchWeather(at area: String, date: Date, completion: @escaping (Result<ReturnedInfo, WeatherError>) -> Void) {
-//        <#code#>
-//    }
-//
-//
-//    var fetchWeatherimp1 : ((AreaAndDate) throws -> ReturnedInfo)!
-////    func fetchWeather(_ areaAndDate:AreaAndDate) throws -> ReturnedInfo {
-////        return try fetchWeatherimp1(areaAndDate)
-////    }
+//     天気予報がsunnyだったら、画面に晴れ画像が表示されること
+    func testDisplaySunnyByWeatherReport(){
+        let mock = WeatherModelMock()
+        //ここでViewが呼ばれてしまう、このためinitにWeathermodelを入れる
+        let viewController = UIStoryboard(name:"WeatherViewController", bundle: Bundle.main).instantiateInitialViewController { coder in
+            ViewController(coder: coder, weatherModel: mock)
+        }
+        viewController!.weatherModel = mock
+//        UIApplication.shared.keyWindow!.rootViewController = viewController
+        //ここでviewが呼ばれることでViewdidloadが読み込まれると考えていたが実際はviewconを変数の時点で呼ばれている
+//        viewController.loadViewIfNeeded()
+        XCTAssertEqual(UIImage(named: "Sunny"),viewController!.weatherImage.image)
+    }
+}
+class WeatherModelMock:WeatherModel{
+    
+    var fetchWeatherImpl:((AreaAndDate) throws -> ReturnedInfo)!
+    func fetchWeather(at area: String, date: Date, completion: @escaping (Result<ReturnedInfo, YumemiWeatherError>) -> Void) {
+        fetchWeather(at: "tokyo", date: Date()) { result in
+            completion(.success(.init(max_temp: 25, date: "2023-04-01T12:00:00+09:00", min_temp: 12, weather: "sunny")))
+        }
+    }
 }
